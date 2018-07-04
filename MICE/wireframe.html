@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WireFrame</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+        <style>
+            .border{
+                border: 1px solid #ccc;
+            }
+            .m-10{
+                margin-left: 10px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container border">
+            <div class="row">
+              <div class="col-md-12">
+                <img src="http://via.placeholder.com/1170x450" class="img-responsive" alt="Banner">
+              </div>
+              <div class="col-md-12">
+                    <h2 class="text-center">Form Request</h2>
+                    <form class="form-horizontal" action="/action_page.php">
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Requester Name </label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control"  placeholder="Requester Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Organisation</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" placeholder="Enter Organisation">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Department</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control"  placeholder="Enter Department">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Email ID</label>
+                            <div class="col-sm-7">
+                                <input type="email" class="form-control" placeholder="Enter Email ID">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Contact No.</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" placeholder="Enter Contact No.">
+                            </div>
+                        </div>
+
+                        <hr>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Nature of Event</label>
+                            <div class="col-sm-7 col-xs-12">
+                                <label class="radio-inline m-10">
+                                    <input type="radio" name="optradio" class="tog">Conference
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="optradio" class="tog">Exhibition
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="optradio" class="tog">Multicity Training/workshop
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="optradio" class="tog">Activation
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="optradio" class="tog">MICE
+                                </label>
+                            </div>
+                        </div>
+                        <section class="section1"  style="display:none;">
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Event Frequency:</label>
+                                <div class="col-sm-7">
+                                    <select class="form-control">
+                                        <option>Annually Recurring</option>
+                                        <option>Monthly Recurring</option>
+                                        <option>Non-recurring</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Event Name:</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" placeholder="Enter Event Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Event Date:</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" placeholder="Enter Event Date">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Country:</label>
+                                <div class="col-sm-7">
+                                    <select class="form-control">
+                                        <option>Annually Recurring</option>
+                                        <option>Monthly Recurring</option>
+                                        <option>Non-recurring</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">State:</label>
+                                <div class="col-sm-7">
+                                    <select class="form-control">
+                                        <option>Annually Recurring</option>
+                                        <option>Monthly Recurring</option>
+                                        <option>Non-recurring</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">City:</label>
+                                <div class="col-sm-7">
+                                    <select class="form-control">
+                                        <option>Annually Recurring</option>
+                                        <option>Monthly Recurring</option>
+                                        <option>Non-recurring</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Preferred Location:</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" placeholder="Enter Preferred Location">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Preferred Venue:</label>
+                                <div class="col-sm-7">
+                                    <select class="form-control">
+                                        <option>5star</option>
+                                        <option>4star</option>
+                                        <option>3star</option>
+                                        <option>Auditorium</option>
+                                        <option>Open ground</option>
+                                        <option>In your company premise</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Duration of event:</label>
+                                <div class="col-sm-7 m-5">
+                                    <input type="text" class="form-control"  placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">PAX</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Meal</label>
+                                <div class="col-sm-7">
+                                    <select class="form-control">
+                                        <option>Breakfast</option>
+                                        <option>Lunch</option>
+                                        <option>Dinner</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Seating Style</label>
+                                <div class="col-sm-7">
+                                    <select class="form-control">
+                                        <option>Cluster</option>
+                                        <option>Theatre</option>
+                                        <option>Classroom</option>
+                                        <option>Mix of Cluster and theatre</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Other Requirements</label>
+                                <div class="col-sm-7">
+                                    <select class="form-control selectpicker " multiple>
+                                        <option>5star</option>
+                                        <option>4star</option>
+                                        <option>3star</option>
+                                        <option>Auditorium</option>
+                                        <option>Open ground</option>
+                                        <option>In your company premise</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Type of setup: </label>
+                                <div class="col-sm-7">
+                                    <select class="form-control selectpicker" >
+                                        <option>Single screen</option>
+                                        <option>Double screen</option>
+                                        <option>LED Watch out</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <p class=" lead">Other Element: </p>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label class="control-label col-sm-3 col-xs-7">Platform with Carpet</label>
+                                        <div class="col-sm-1 col-xs-2">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value=""></label>
+                                            </div>
+                                        </div>
+                                        <label class="control-label col-sm-2 col-xs-7 ">Stage Backdrop  </label>
+                                        <div class="col-sm-1 col-xs-2">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value=""></label>
+                                            </div>
+                                        </div>
+                                        <label class="control-label col-sm-2 col-xs-7 ">Registration Backdrop </label>
+                                        <div class="col-sm-1 col-xs-2">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value=""></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3 col-xs-3 ">Standees</label>
+                                <div class="col-sm-1 col-xs-2">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value=""></label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 col-xs-offset-6">
+                                    <input type="text" class="form-control" placeholder="Qty">
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="control-label col-sm-3 col-xs-7">PA System</label>
+                                    <div class="col-sm-1 col-xs-2">
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" value=""></label>
+                                        </div>
+                                    </div>
+                                    <label class="control-label col-sm-2 col-xs-7 ">Mixer</label>
+                                    <div class="col-sm-1 col-xs-2">
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" value=""></label>
+                                        </div>
+                                    </div>
+                                    <label class="control-label col-sm-2 col-xs-7 ">Amplifier</label>
+                                    <div class="col-sm-1 col-xs-2">
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" value=""></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="control-label col-sm-3 col-xs-7">Cordless Mics</label>
+                                    <div class="col-sm-1 col-xs-2">
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" value=""></label>
+                                        </div>
+                                    </div>
+                                    <label class="control-label col-sm-2 col-xs-7 ">Stage Backdrop</label>
+                                    <div class="col-sm-1 col-xs-2">
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" value=""></label>
+                                        </div>
+                                    </div>
+                                    <label class="control-label col-sm-2 col-xs-7 ">Slide Changers</label>
+                                    <div class="col-sm-1 col-xs-2">
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" value=""></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Liquor preference: </label>
+                                <div class="col-sm-7 m-5">
+                                    <input type="text" class="form-control"  placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Any Other event specification:</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Airport Transfers Required:</label>
+                                <div class="col-sm-7">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="atr1">Yes
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="atr1">No
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Accommodation Required:</label>
+                                <div class="col-sm-7">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="ar1">Yes
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="ar1">No
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">If Yes:</label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">No. of rooms:</label>
+                                <div class="col-sm-7 m-5">
+                                    <input type="text" class="form-control"  placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Check in Date and Time</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Checkout Date and Time:</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3"> Type of Room: </label>
+                                <div class="col-sm-7">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio">Single
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio">Double
+                                    </label>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form">
+                                <label class="control-label col-sm-3">Audience Generation Services:</label>
+                                <div class="col-sm-7">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio1"> Yes
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio1"> No
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form">
+                                <label class="control-label col-sm-3">Response Management Services:</label>
+                                <div class="col-sm-7">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio2"> Yes
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio2"> No
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">(If Yes):Upload data</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="form-group ">
+                            <div class="col-sm-offset-6 col-sm-6">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+        <script>
+            $( function() {
+                $( 'select' ).selectpicker();
+                $( ".section1" ).hide();
+                $( ".tog" ).click( function() {
+                    $( ".section1" ).show();
+                } );
+            } );
+        </script>
+
+    </body>
+</html>
